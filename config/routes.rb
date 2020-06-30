@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  get 'users/new'
-  get 'users/create'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  resource :users, only: [:new, :create]
+  root to: 'users#new'
+  resources :users
 end
