@@ -13,7 +13,6 @@
 </form>
 
 <%#= ruby form tag %>
-
 <%= form_tag('/users', method: 'post') do %>
 <%= label_tag(:username, 'Username') %>
 <%= text_field_tag(:username) %>
@@ -23,7 +22,6 @@
 <%= password_field_tag(:password) %>
 <%= submit_tag('Register') %>
 <% end %>
-
 <% end %>
 
 <%#= ruby form_for %>
