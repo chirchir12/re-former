@@ -9,6 +9,9 @@ files:
   ignore:
     - 'Guardfile'
     - 'Rakefile'
+    - 'puma.rb'
+    - 'spring.rb'
+    - 'application_system_test_case.rb'
     - 'node_modules/**/*'
     - 'config/**/*'
     - 'bin/*'
