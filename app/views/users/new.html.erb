@@ -1,0 +1,39 @@
+<h1>Create user </h1>
+<% if false %>
+
+<%#= nromal html  form %>
+<form action="/users" accept-charset="UTF-8" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <label for="username">Username</label><br />
+    <input type="text" name="user[username]" id="username" /><br />
+    <label for="email"></label>Email<br />
+    <input type="email" name="user[email]" id="email" /><br />
+    <label for="password">Password</label><br>
+    <input type="password" name="user[password]" id="password" /><br />
+    <input type="submit" value="Create" />
+</form>
+
+<%#= ruby form tag %>
+<%= form_tag('/users', method: 'post') do %>
+<%= label_tag(:username, 'Username') %>
+<%= text_field_tag(:username) %>
+<%= label_tag(:email, 'email') %>
+<%= email_field_tag(:email) %>
+<%= label_tag(:password, 'password') %>
+<%= password_field_tag(:password) %>
+<%= submit_tag('Register') %>
+<% end %>
+<% end %>
+
+<%#= ruby form_for %>
+<%= form_for @user do |f| %>
+<%= render partial: 'error' %>
+
+<%= f.label :username, "Username" %>
+<%= f.text_field :username %>
+<%= f.label :email, "email" %>
+<%= f.email_field :email %>
+<%= f.label :password, "password" %>
+<%= f.password_field :password %>
+<%= f.submit 'Register'%>
+<% end %>
