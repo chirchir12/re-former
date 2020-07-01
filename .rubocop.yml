@@ -2,6 +2,9 @@ AllCops:
   Exclude:
     - "README.md"
     - "Guardfile"
+     - 'puma.rb'
+    - 'spring.rb'
+    - 'application_system_test_case.rb'
     - "Rakefile"
     - "config/**/*"
     - "node_modules/**/*"

@@ -8,9 +8,6 @@ linters:
 files:
   ignore:
     - 'Guardfile'
-    - 'puma.rb'
-    - 'spring.rb'
-    - 'application_system_test_case.rb'
     - 'Rakefile'
     - 'node_modules/**/*'
     - 'config/**/*'
