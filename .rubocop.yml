@@ -1,17 +1,17 @@
 AllCops:
   Exclude:
-    - "README.md"
-    - "Guardfile"
-     - 'puma.rb'
+    - 'README.md'
+    - 'Guardfile'
+    - 'puma.rb'
     - 'spring.rb'
     - 'application_system_test_case.rb'
-    - "Rakefile"
-    - "config/**/*"
-    - "node_modules/**/*"
-    - "bin/*"
-    - "log/*"
-    - "test/**/*"
-    - "temp/**/**/*"
+    - 'Rakefile'
+    - 'config/**/*'
+    - 'node_modules/**/*'
+    - 'bin/*'
+    - 'log/*'
+    - 'test/**/*'
+    - 'temp/**/**/*'
 
   DisplayCopNames: true
 
@@ -26,7 +26,6 @@ Metrics/ClassLength:
 Metrics/BlockLength:
   ExcludedMethods: ['describe']
   Max: 30
-
 
 Style/Documentation:
   Enabled: false
